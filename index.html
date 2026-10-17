@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="A little something, chosen by you. Explore Tohfa's thoughtful gift boxes or build a personal one with little treats, paper goods, and everyday joys.">
+  <title>Tohfa — Little things. Big feelings.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="model.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-action="skip-main">Skip to content</a>
+  <div class="announcement"><span>A little thought goes a long way.</span><a href="#help">Complimentary delivery on orders ₹1,499+ <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Tohfa home"><img src="assets/favicon.svg" width="30" height="30" alt="">tohfa<span class="wordmark-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#shop" data-nav="shop">The little things</a><a href="#builder" data-nav="builder">Build a box</a><a href="#story" data-nav="story">Our story</a></nav>
+    <div class="header-actions"><a class="bag-link" href="#bag" aria-label="View gift bag"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-label">Your bag</span><span id="bag-count" class="count-badge">0</span></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#shop">The little things</a><a href="#builder">Build a box</a><a href="#story">Our story</a><a href="#help">A little help</a></nav>
+  </header>
+  <div id="storage-notice" class="storage-notice" hidden>Your browser can’t save this box. You can still explore, but your choices will reset when you leave.</div>
+  <main id="main" tabindex="-1"><noscript><div class="empty-state"><h1>A little JavaScript, please.</h1><p>The gift builder needs JavaScript to update your box and prices. Enable it to explore Tohfa.</p></div></noscript></main>
+  <footer class="site-footer">
+    <div class="footer-top"><div><a href="#home" class="wordmark footer-mark">tohfa.</a><p>Small things.<br>Sent with a whole lot of thought.</p></div><div class="footer-links"><p class="eyebrow">COME ON IN</p><a href="#shop">Explore the little things</a><a href="#builder">Make it personal</a><a href="#story">Meet Tohfa</a></div><div class="footer-links"><p class="eyebrow">A LITTLE HELP</p><a href="#help">Delivery & packaging</a><a href="#help">Gifting questions</a><button class="text-button" data-action="clear-data">Clear saved shopping data</button></div><div class="footer-note"><span class="handwritten">something small,<br>something meaningful.</span><svg viewBox="0 0 90 50" width="90" height="50" fill="none" stroke="currentColor" aria-hidden="true"><path d="M9 16q40 40 67 0m-16 2 17-4-5 17" stroke-width="1.4"/></svg></div></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Tohfa · Thoughtful by nature.</span><a href="#help">About this project</a></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title">Make a little room?</h2><p id="confirm-description"></p><div class="dialog-actions"><button class="button button-light" data-action="cancel-confirm">Keep it</button><button class="button" data-action="accept-confirm">Continue</button></div></dialog>
+</body>
+</html>
